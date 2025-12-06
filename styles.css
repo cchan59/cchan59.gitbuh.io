@@ -1,0 +1,360 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Courier New", monospace;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#intro-text,
+#intro-text *,
+section#about *,
+section h2,
+section h3,
+section h4,
+section p,
+#contact,
+#contact *,
+#projects h2,
+.project-caption {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  letter-spacing: 0.7px;
+}
+
+nav {
+  background-color: #5780c2;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 25px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.15em;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: black;
+}
+
+#wrapper {
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 55px 20px 65px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.3em;
+  letter-spacing: 2.5px;
+  font-weight: bold;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.about-page header {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 1em;
+  padding: 20px 20px 20px;
+}
+
+.portfolio-process-contact-page header {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 0.7em;
+  padding: 20px 20px 20px;
+}
+
+#intro-row {
+  margin-top: 20px;
+}
+
+#hero-box {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+#hero-box img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#intro-text {
+  float: right;
+  width: 50%;
+  padding: 20px;
+}
+
+#intro-text h2 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+#h3 img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  display: block;
+  margin: 40px 0 40px;
+  border-radius: 10px;
+}
+
+#about {
+  clear: both;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+#about h2 {
+  font-size: 2em;
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+#about p {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+#purpose h2 {
+  font-size: 2em;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+#purpose {
+  clear: both;
+  padding: 20px;
+}
+
+.project {
+  flex: 0 0 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; 
+}
+
+.project img {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transform-origin: center;
+}
+
+.project img:hover {
+  transform: scale(1.5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+#projects h2 {
+  text-align: center;
+  font-size: 3em;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  font-weight: bold;
+}
+
+.project-row {
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-img {
+  width: auto;
+  height: auto;
+  max-height: 250px;
+  object-fit: contain;
+}
+
+.mag-img {
+  margin-top: 20px;
+  margin-bottom: 38px;
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: contain;
+}
+
+.project-caption {
+  border: 0;
+  padding: 10px;
+  font-size: 0.95em;
+  text-align: center;
+  line-height: 1.35;
+}
+
+#process-intro h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#process-intro,
+#process-book-cover,
+#process-album-cover,
+#process-magazine,
+#process-illustrations,
+#process-node-logo,
+#process-reflection {
+  max-width: 760px;
+  margin: 0 auto 60px auto;
+}
+
+#process-book-cover h3,
+#process-album-cover h3,
+#process-magazine h3,
+#process-illustrations h3,
+#process-node-logo h3,
+#process-reflection h3 {
+  font-size: 1.4em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#process-book-cover h4,
+#process-album-cover h4,
+#process-magazine h4,
+#process-illustrations h4,
+#process-node-logo h4 {
+  font-size: 1.05em;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+#process-intro p,
+#process-book-cover p,
+#process-album-cover p,
+#process-magazine p,
+#process-illustrations p,
+#process-node-logo p,
+#process-reflection p {
+  line-height: 1.7;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+#process-intro h3 a,
+#process-book-cover h3 a,
+#process-album-cover h3 a,
+#process-magazine h3 a,
+#process-illustrations h3 a,
+#process-node-logo h3 a {
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+#process-intro h3 a:hover,
+#process-book-cover h3 a:hover,
+#process-album-cover h3 a:hover,
+#process-magazine h3 a:hover,
+#process-illustrations h3 a:hover,
+#process-node-logo h3 a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.process-project {
+  position: relative;
+  display: inline-block;
+}
+
+.process-preview {
+  position: absolute;
+  top: 0;
+  left: 105%;
+  width: 400px;
+  max-width: 40vw;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(5px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 100;
+}
+
+.process-project:hover .process-preview {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#contact-hours {
+  width: 100%;
+  max-width: 700px;
+  margin: 30px auto 40px auto;
+  border-collapse: collapse;
+}
+
+#contact-hours caption {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+#contact-hours th,
+#contact-hours td {
+  border: 1px solid #000000;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+#contact-hours th {
+  background-color: #f3f3f3;
+  font-weight: bold;
+}
+
+.clear {
+  clear: both;
+}
+
+footer {
+  clear: both;
+  margin-top: 200px;
+  padding: 25px;
+  text-align: center;
+}
+
+#contanct-links a {
+  border: 1px solid #000000;
+  padding: 10px 30px;
+  font-size: 1.7em;
+  margin: 0 27px;
+  text-decoration: none;
+  color: black;
+}
+
+#copyright {
+  margin-top: 125px;
+  font-size: 0.85em;
+  margin-bottom: 0;
+}
